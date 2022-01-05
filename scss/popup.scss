@@ -1,0 +1,55 @@
+@charset 'utf-8';
+@import 'reset.scss';
+
+body{
+    background-color: #333;
+    position: relative;
+    h1{
+        font-family: 'Bakbak One';
+        font-size: 45px;
+        color: #fff;
+        letter-spacing: 3px;
+        margin: 20px; margin-left: 10%;
+        &::after{
+            clear: both;
+            content:"";
+            display: block;
+            width: 90%;
+            height: 1px;
+            background-color: #fff;
+            margin-top: 8px;
+        }
+    }
+    table{
+        width: 83%; margin: 10px;
+        border: none; margin-left: 7%;
+        border-collapse: collapse;
+        tr{
+            height: 55px;
+            th{
+                width: 10%;
+                .fa-check-circle{color: #fff; font-size: 22px;}
+            }
+            td{
+                width: auto;
+            }
+        }
+    }
+    fieldset{
+        border: none;
+
+        #text{
+            width: 250px; height: 28px; border: none;
+            border-radius: 14px; padding-left: 15px;
+            display: block; margin: 0 auto; 
+            color: #777; background-color: #fff; position: relative;
+            top: 80%; left: 0%;
+        }
+        #submit{
+            width: 22px; height: 22px; border-radius: 50%; display: block;
+            background-color: rgba(216, 112, 147, 0.726); border:1px dotted #888;
+            position: relative; left: 69%;bottom: -33%;
+        }
+    }
+    
+}

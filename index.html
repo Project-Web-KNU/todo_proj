@@ -5,36 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?after" type="text/css">
     <script src="https://kit.fontawesome.com/319ea18cd4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>To Do List</title>
 </head>
 
 <body>
     <div id="section">
         <div class="inner">
-            <h1>Spring comes here..</h1>
-            <h3>To Do List <i class="fas fa-calendar-check"></i></h3>
+            <h1><a href="javascript:void(0);" style="text-decoration: none;"
+                    onclick="Todolist.buildCalendar(true);">Let's
+                    Get It
+                    !</a></h1>
+            <h3>To Do List<br>(ver. <span id="year">2022</span>)<i id=calender class="fas fa-calendar-check"></i></h3>
             <div class="wrap">
                 <article>
-                    <h2>March</h2>
+                    <h2 class="year_mon"></h2>
+                    <table class="jan" border="1" id="calendar">
+                        <thead>
+                            <tr>
+                                <th scope="col">Sun</th>
+                                <th scope="col">Mon</th>
+                                <th scope="col">Tue</th>
+                                <th scope="col">Wed</th>
+                                <th scope="col">Thu</th>
+                                <th scope="col">Fri</th>
+                                <th scope="col">Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody class='cal'>
+
+                        </tbody>
+                    </table>
                 </article>
-                <article>
-                    <h2>April</h2>
-                </article>
-                <article>
-                    <h2>May</h2>
-                </article>
+                <div class="button1">
+                    <a href="javascript:void(0)" name="nextMon">
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+                <div class="button2">
+                    <a href="javascript:void(0)" name="preMon">
+                        <i class="fas fa-angle-left"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-    <script>
-        window.onload = function () {
-            setTimeout(() => {
-                alert('별 누나는 자바스크립트를 좋아한다.ㅋㅋ');
-            }, 3000);
-        }
-    </script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

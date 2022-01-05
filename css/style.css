@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Fuzzy+Bubbles&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -8,38 +8,54 @@ a {
   text-decoration: none;
 }
 
+a:link, a:focus, a:visited {
+  color: antiquewhite;
+}
+
+a:hover {
+  color: red;
+}
+
 ul, ol, li {
   list-style: none;
 }
 
 body {
-  background-color: rgba(5, 5, 5, 0.647);
+  background-color: #222;
 }
 body #section {
-  margin: 100px;
+  margin: 30px;
 }
 body #section .inner {
+  margin: 0 auto;
   width: 1180px;
-  padding: 150px auto;
+  padding: 100px auto;
   position: relative;
 }
 body #section .inner h1 {
-  font-family: "Fuzzy Bubbles";
-  color: lightyellow;
-  letter-spacing: 1.4px;
-  font-size: 50px;
+  font-family: "Bakbak One";
+  color: #ffeee0;
+  letter-spacing: 5px;
+  font-size: 60px;
   line-height: 1.2;
   margin-left: 40px;
-  margin-bottom: 50px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 body #section .inner h3 {
-  font-family: "Fuzzy Bubbles";
-  color: #fff;
+  font-family: "Bakbak One";
+  color: #ffeee0;
   font-size: 20px;
   font-weight: bold;
   position: absolute;
-  top: -50px;
-  left: 0px;
+  top: 0px;
+  right: 0px;
+}
+body #section .inner #calender {
+  position: relative;
+  font-size: 25px;
+  top: -15px;
+  right: -10px;
 }
 body #section .inner .wrap {
   width: 100%;
@@ -47,36 +63,46 @@ body #section .inner .wrap {
   padding: 0 auto;
 }
 body #section .inner .wrap article {
-  width: 380px;
-  height: 600px;
-  float: left;
-  margin-right: 20px;
-}
-body #section .inner .wrap article:last-child {
-  margin-right: 0;
+  background-image: url(../img/january.jpeg);
+  background-repeat: no-repeat;
+  background-size: 450px 600px;
+  background-position-x: right;
+  background-position-y: 40px;
 }
 body #section .inner .wrap article h2 {
-  font-family: "Fuzzy Bubbles";
-  letter-spacing: 1.3px;
+  font-family: "Bakbak One";
+  letter-spacing: 2px;
   color: #fff;
+  margin-bottom: 30px;
 }
-body #section .inner .wrap article:nth-of-type(1) {
-  background-image: url(../img/march.jpeg);
-  background-position: -22px -212px;
-  background-repeat: no-repeat;
-  opacity: 0.8;
+body #section .inner .wrap article .jan {
+  color: antiquewhite;
 }
-body #section .inner .wrap article:nth-of-type(2) {
-  background-image: url(../img/april.jpeg);
-  background-position: -22px -212px;
-  background-repeat: no-repeat;
-  opacity: 0.8;
+body #section .inner .wrap article .jan thead tr th {
+  width: 98px;
+  height: 40px;
+  font-family: "Bakbak One";
+  letter-spacing: 2px;
+  font-size: 20px;
 }
-body #section .inner .wrap article:nth-of-type(3) {
-  background-image: url(../img/may.jpeg);
-  background-position: -85px -180px;
-  background-repeat: no-repeat;
-  opacity: 0.8;
+body #section .inner .wrap article .jan tbody td {
+  height: 80px;
+  font-weight: bold;
+  color: antiquewhite;
+  vertical-align: top;
+  padding: 5px;
+}
+body #section .inner .wrap .button1 {
+  position: absolute;
+  top: 400px;
+  left: 1230px;
+  font-size: 35px;
+}
+body #section .inner .wrap .button2 {
+  position: absolute;
+  top: 400px;
+  right: 1230px;
+  font-size: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */

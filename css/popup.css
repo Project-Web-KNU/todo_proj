@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Fuzzy+Bubbles&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:focus, a:visited {
+  color: antiquewhite;
+}
+
+a:hover {
+  color: red;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+body {
+  background-color: #333;
+  position: relative;
+}
+body h1 {
+  font-family: "Bakbak One";
+  font-size: 45px;
+  color: #fff;
+  letter-spacing: 3px;
+  margin: 20px;
+  margin-left: 10%;
+}
+body h1::after {
+  clear: both;
+  content: "";
+  display: block;
+  width: 90%;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 8px;
+}
+body table {
+  width: 83%;
+  margin: 10px;
+  border: none;
+  margin-left: 7%;
+  border-collapse: collapse;
+}
+body table tr {
+  height: 55px;
+}
+body table tr th {
+  width: 10%;
+}
+body table tr th .fa-check-circle {
+  color: #fff;
+  font-size: 22px;
+}
+body table tr td {
+  width: auto;
+}
+body fieldset {
+  border: none;
+}
+body fieldset #text {
+  width: 250px;
+  height: 28px;
+  border: none;
+  border-radius: 14px;
+  padding-left: 15px;
+  display: block;
+  margin: 0 auto;
+  color: #777;
+  background-color: #fff;
+  position: relative;
+  top: 80%;
+  left: 0%;
+}
+body fieldset #submit {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: block;
+  background-color: rgba(216, 112, 147, 0.726);
+  border: 1px dotted #888;
+  position: relative;
+  left: 69%;
+  bottom: -33%;
+}
+
+/*# sourceMappingURL=popup.css.map */
