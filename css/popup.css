@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Fuzzy+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Hi+Melody&family=Poor+Story&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -59,7 +59,15 @@ body table tr th .fa-check-circle {
   font-size: 22px;
 }
 body table tr td {
+  color: #fff;
+  font-family: "Hi Melody";
+}
+body table tr td::nth-of-child(1) {
+  width: 120%;
+}
+body table tr td::nth-of-child(2) {
   width: auto;
+  text-align: right;
 }
 body fieldset {
   border: none;
@@ -85,9 +93,9 @@ body fieldset #submit {
   display: block;
   background-color: rgba(216, 112, 147, 0.726);
   border: 1px dotted #888;
-  position: relative;
+  position: absolute;
   left: 69%;
-  bottom: -33%;
+  bottom: 1%;
 }
 
 /*# sourceMappingURL=popup.css.map */
